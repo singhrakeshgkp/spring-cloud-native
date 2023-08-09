@@ -2,6 +2,7 @@
 - [Advantages](#Advantages)
 - [What we want to achieve?](#What-we-want-to-achieve?)
 - [Creating application](#creatig-application)
+- [Building Image using Paketo](#building-image-using-paketo)
 
 ## Advantages
 - Speed (Faster and Flexible delivery)
@@ -29,5 +30,13 @@ Spring Boot ---------> Cloud Native BuildPacks -------> Kubernates
     ```
 
 
-
-  
+## Building Image using paketo
+- In spring boot we don't have to install anything, its already included in spring boot plugin.
+- First Start the docker and run the ```docker context ls ``` command, it should return the result which looks like below
+  ```
+  NAME                TYPE                DESCRIPTION                               DOCKER ENDPOINT                                               KUBERNETES ENDPOINT   ORCHESTRATOR
+    default             moby                Current DOCKER_HOST based configuration   unix:///var/run/docker.sock                                               
+    desktop-linux *     moby                Docker Desktop                            unix:///Users/rakeshsingh/.docker/run/docker.sock                         
+  ```
+- To build image run ```mvn spring-boot:build-image``` command
+- 
