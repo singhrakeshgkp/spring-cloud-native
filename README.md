@@ -1,4 +1,9 @@
 # Contents
+- Tech Stack
+   - Spring
+   -  BuildPacks, Paketo Impl of Buildpacks
+   - Docker
+   - Kubernates
 - [Advantages](#Advantages)
 - [What we want to achieve?](#What-we-want-to-achieve?)
 - [Creating application](#creatig-application)
