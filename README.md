@@ -4,11 +4,18 @@
    -  BuildPacks, Paketo Impl of Buildpacks
    - Docker
    - Kubernates
-- [Advantages of spring cloud native](#Advantages-of-spring-cloud-native)
-- [What we want to achieve?](#What-we-want-to-achieve?)
-- [Creating application](#creatig-application)
-- [Building Image using Paketo](#building-image-using-paketo)
-
+- [Spring Cloud Native]
+  - [Goals](#Goals)
+  - [Advantages of spring cloud native](#Advantages-of-spring-cloud-native)
+  - [What we want to achieve?](#What-we-want-to-achieve?)
+  - [Creating application](#creatig-application)
+  - [Building Image using Paketo](#building-image-using-paketo)
+- ref
+   - [Thomas vitale](https://www.youtube.com/watch?v=LuOZyHUtOc8&t=906s)
+## Goals
+  1. Rapic and Continous Feedback Loop
+  2. Reduced Cognitive loads
+  3. Clear and safe path to production
 ## Advantages of spring cloud native
 - Speed (Faster and Flexible delivery)
 - Resilience(Availability and stability)
