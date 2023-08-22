@@ -4,13 +4,13 @@
    -  BuildPacks, Paketo Impl of Buildpacks
    - Docker
    - Kubernates
-- [Spring Cloud Native]
+- [Spring Cloud Native](#spring-cloud-native)
   - [Goals](#Goals)
   - [Advantages of spring cloud native](#Advantages-of-spring-cloud-native)
   - [What we want to achieve?](#What-we-want-to-achieve?)
   - [Creating application](#creatig-application)
   - [Building Image using Paketo](#building-image-using-paketo)
-- ref
+- Ref
    - [Thomas vitale](https://www.youtube.com/watch?v=LuOZyHUtOc8&t=906s)
 ## Goals
   1. Rapic and Continous Feedback Loop
@@ -27,7 +27,7 @@
 Development            Containerization                Deployment
 Spring Boot ---------> Cloud Native BuildPacks -------> Kubernates
 ```
-
+# Spring Cloud Native
 ## Creating application
 - Create Spring boot application with ```reactive web, actuator, and prometheus``` Dependency
 - Define a controlller ```CloudNativeExController``` and greet endpoint.
