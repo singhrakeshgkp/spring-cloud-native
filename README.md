@@ -12,6 +12,8 @@
   - [Building Image using Paketo](#building-image-using-paketo)
 - Ref
    - [Thomas vitale](https://www.youtube.com/watch?v=LuOZyHUtOc8&t=906s)
+
+# Spring Cloud Native
 ## Goals
   1. Rapic and Continous Feedback Loop
   2. Reduced Cognitive loads
@@ -27,7 +29,6 @@
 Development            Containerization                Deployment
 Spring Boot ---------> Cloud Native BuildPacks -------> Kubernates
 ```
-# Spring Cloud Native
 ## Creating application
 - Create Spring boot application with ```reactive web, actuator, and prometheus``` Dependency
 - Define a controlller ```CloudNativeExController``` and greet endpoint.
