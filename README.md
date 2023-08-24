@@ -24,11 +24,12 @@
 - Scale(Elasticity and Dynamic scaling)
 - Cost(Efficiency and Cost Optimization)
 
-### Traditional VS Native Stack
+### Traditional VS Native Stack 
+- [Diagram](/img1.png)
 - Traditional -> We package our application as war/ear file, before jvm we work with web/server and the deploy our application
   ```
   Application- war/ear file
-  web server
+  web server(middleware)
   runtime
   Note-> slow feedback loop, and cognitive load is higher.
   ```
@@ -36,17 +37,24 @@
    ```
    application jar
    runtime
-   Note -> Fast feedback loop and cognitive load is lower
+   Note -> Fast feedback loop and reduced cognitive load
    ```
-- with K8s
+- with Container
 
    ```
-   application image
+   application(container)
    Runtime (OCI) container
 
-   Note-> feedback loop is a bit slower as we need to know how to build image and cognitive load is a bit higher
+   Note-> have one additional steps, feedback loop becomes a bit slower (as we need to know how to build image) and cognitive load becomes 
+   a bit higher
    ```
-  
+- With K8s
+  ```
+   application(container)
+   Kubernates(middleware)
+   Runtime (OCI) container
+  Note:- Feedback loop is as slow as it was in begning,cognitive load is aslo worse.
+  ```  
   
 
 ## What we want to achieve?
