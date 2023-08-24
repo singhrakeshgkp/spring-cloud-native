@@ -54,7 +54,10 @@
    Kubernates(middleware)
    Runtime (OCI) container
   Note:- Feedback loop is as slow as it was in begning,cognitive load is aslo worse.
-  ```  
+  ```
+  - Issue with K8s
+     - Need to deal with multiple configuration file such as ```deployment.yml, service.yml and IngressController.yml``` file
+  -      
   
 
 ## What we want to achieve?
