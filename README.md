@@ -24,6 +24,31 @@
 - Scale(Elasticity and Dynamic scaling)
 - Cost(Efficiency and Cost Optimization)
 
+### Traditional VS Native Stack
+- Traditional -> We package our application as war/ear file, before jvm we work with web/server and the deploy our application
+  ```
+  Application- war/ear file
+  web server
+  runtime
+  Note-> slow feedback loop, and cognitive load is higher.
+  ```
+- SelfContained Jar
+   ```
+   application jar
+   runtime
+   Note -> Fast feedback loop and cognitive load is lower
+   ```
+- with K8s
+
+   ```
+   application image
+   Runtime (OCI) container
+
+   Note-> feedback loop is a bit slower as we need to know how to build image and cognitive load is a bit higher
+   ```
+  
+  
+
 ## What we want to achieve?
 ```
 Development            Containerization                Deployment
