@@ -1,7 +1,7 @@
 # Table of contents
 - [Dev Exp](#dev-exp)
-   - [001 Dev Exp](#001-dev-exp) 
-   - [002 Dev Exp](#002-dev-exp)
+   - [001 Dev Exp](#001-dev-exp)  simple spring boot application
+   - [002 Dev Exp](#002-dev-exp)  simple spring boot app with devtools dependency
    - [003 Dev Exp](#003-dev-exp) containerize application using paketo
  
 # Dev Exp
