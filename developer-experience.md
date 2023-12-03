@@ -29,5 +29,5 @@ a)runtime(oci)
 Go,spring,.net...etc --------------------->image
 ```
 - we don't need to install any additional software with spring boot, spirng boot provide in built plugin, we just need to run the following command to containerize the application. ``` mvn spring-boot:build image```
-- Now run ```docker run --rm p 8080:8080 <image name>``` command to start the application
+- Now run ```docker run --rm -p 8080:8080 <image name>``` command to start the application
   
