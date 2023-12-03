@@ -30,7 +30,7 @@ public class SpringCloudNativeExApplication {
 						List.of(
 								new Customer("rakesh"),
 								new Customer("devendra kumar"),
-								new Customer("rakesh kumar singh")
+								new Customer("saurabh kumar")
 						)
 				)).build();
 	}
