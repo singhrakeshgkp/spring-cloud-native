@@ -28,15 +28,15 @@
 - [Diagram](/img1.png)
 - Traditional -> We package our application as war/ear file, before jvm we work with web/server and the deploy our application
   ```
-  Application- war/ear file
-  web server(middleware)
-  runtime
+  c)Application- war/ear file
+  b)web server(middleware)
+  a)runtime(JVM)
   Note-> slow feedback loop, and cognitive load is higher.
   ```
 - SelfContained Jar
    ```
-   application jar
-   runtime
+   b)application jar
+   a)runtime(jvm)
    Note -> Fast feedback loop and reduced cognitive load
    ```
 - with Container
@@ -50,9 +50,9 @@
    ```
 - With K8s
   ```
-   application(container)
-   Kubernates(middleware)
-   Runtime (OCI) container
+   c)application(container)
+   b)Kubernates(middleware)
+   a)Runtime (OCI) container
   Note:- Feedback loop is as slow as it was in begning,cognitive load is aslo worse.
   ```
   - Issue with K8s
