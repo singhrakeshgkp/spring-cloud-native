@@ -1,0 +1,4 @@
+spring:
+  cloud:
+    native:
+      msg: "Welcome to spring cloud native externalize configuration"

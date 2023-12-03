@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: configMap
+metadata:
+  name: spring-cloud-native-svc-config
+data:
+  application.yml:  |
+    spring: 
+      cloud:
+        native:
+          msg:  Welcome to spring cloud native externalize configuration!!!
+    server:
+      shutdown: graceful
+    spring:
+      lifecycle:  
+        timeout-per-shutdown-phase: 15s
+    
+
+  #can embed prop file or define key value pair

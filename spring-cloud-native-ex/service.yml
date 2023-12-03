@@ -1,0 +1,18 @@
+#apiVersion: apps/v1
+#kind: Deployment
+apiVersion: serving.knative.dev/v1
+kind: service
+metadata:
+  name: spring-cloud-native-svc
+spec:
+  template:
+    spec:
+      - containers:
+          - name: spring-cloud-native-svc
+            image: abc/spring-cloud-native-svc-1.0
+            resources:
+              requests:
+                memory: "1Gi"
+              limits:
+                memory: "1Gi"
+
