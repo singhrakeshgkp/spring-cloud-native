@@ -10,7 +10,7 @@
   - [What we want to achieve?](#What-we-want-to-achieve?)
   - [Creating application](#creatig-application)
   - [Building Image using Paketo](#building-image-using-paketo)
-- [Branches](#branches)
+- [Developer Experience](/developer-experience.md)
   - [001-dev-exp](#001-dev-exp)
 - Ref
    - [Thomas vitale](https://www.youtube.com/watch?v=LuOZyHUtOc8&t=906s)
@@ -67,11 +67,6 @@
 Development            Containerization                Deployment
 Spring Boot ---------> Cloud Native BuildPacks -------> Kubernates
 ```
-# Branches
-### 001-dev-exp
-- Here we will create a simple spring boot application and do the some changes and run the application.for more details follow [link](/001-dev-exp.md)
-
-
 
 ## Creating application
 - Create Spring boot application with ```reactive web, actuator, and prometheus``` Dependency
