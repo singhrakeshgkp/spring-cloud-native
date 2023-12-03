@@ -24,6 +24,42 @@
 - Scale(Elasticity and Dynamic scaling)
 - Cost(Efficiency and Cost Optimization)
 
+### Traditional VS Native Stack 
+- [Diagram](/img1.png)
+- Traditional -> We package our application as war/ear file, before jvm we work with web/server and the deploy our application
+  ```
+  Application- war/ear file
+  web server(middleware)
+  runtime
+  Note-> slow feedback loop, and cognitive load is higher.
+  ```
+- SelfContained Jar
+   ```
+   application jar
+   runtime
+   Note -> Fast feedback loop and reduced cognitive load
+   ```
+- with Container
+
+   ```
+   application(container)
+   Runtime (OCI) container
+
+   Note-> have one additional steps, feedback loop becomes a bit slower (as we need to know how to build image) and cognitive load becomes 
+   a bit higher
+   ```
+- With K8s
+  ```
+   application(container)
+   Kubernates(middleware)
+   Runtime (OCI) container
+  Note:- Feedback loop is as slow as it was in begning,cognitive load is aslo worse.
+  ```
+  - Issue with K8s
+     - Need to deal with multiple configuration file such as ```deployment.yml, service.yml and IngressController.yml``` file
+  -      
+  
+
 ## What we want to achieve?
 ```
 Development            Containerization                Deployment
