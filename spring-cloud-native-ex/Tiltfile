@@ -1,0 +1,19 @@
+# Build
+custom_build(
+    # Name of the container image
+    ref = 'spring-cloud-native-ex',
+    # Command to build the container image
+    command = './mvn spring-boot:build image --imageName spring-cloud-native-ex:0.1',
+    # Files to watch that trigger a new build
+    deps = ['pom.xml', './bin/main'],
+    # Enables live reload
+    live_update = [
+        sync('./bin/main', '/workspace/BOOT-INF/classes')
+    ]
+)
+
+# Deploy
+k8s_yaml(['config/Deployment.yaml', 'config/Service.yaml'])
+
+# Manage
+k8s_resource('spring-cloud-native-ex', port_forwards=['8080:8080'])

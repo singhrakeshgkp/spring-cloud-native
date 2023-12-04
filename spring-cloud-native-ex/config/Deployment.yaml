@@ -1,0 +1,40 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-cloud-native-ex
+  labels:
+    app: spring-cloud-native-ex
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: spring-cloud-native-ex
+  template:
+    metadata:
+      labels:
+        app: spring-cloud-native-ex
+    spec:
+      containers:
+        - name: spring-cloud-native-ex
+          image: spring-cloud-native-ex:0.1
+          imagePullPolicy: IfNotPresent
+          securityContext:
+            runAsUser: 1001
+          lifecycle:
+            preStop:
+              exec:
+                command: [ "sh", "-c", "sleep 5" ]
+          ports:
+            - containerPort: 8080
+          env:
+            - name: BPL_DEBUG_ENABLED
+              value: "true"
+            - name: BPL_DEBUG_PORT
+              value: "9090"
+          resources:
+            requests:
+              cpu: "0.2"
+              memory: "512Mi"
+            limits:
+              cpu: "1"
+              memory: "512Mi"

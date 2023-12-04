@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>spring-cloud-native-ex</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<name>spring-cloud-native-ex</name>
 	<description>Spring cloud native ex project for Spring Boot</description>
 	<properties>
