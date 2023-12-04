@@ -43,7 +43,9 @@ a)runtime(OCI)
 - To mitigate ```deployment, service, and ingresscontroller``` configuration we can use TILT.
 
 ### TILT
-- Is a tool use for continous development on kubernates.
+- Is a tool use for continous development on kubernates. whateverever command we were running manually, with the help of TILT we can automate that.
 - To install TILT use reference of official [doc](https://docs.tilt.dev/install)
+
+  
 
   
