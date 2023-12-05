@@ -6,7 +6,7 @@
    - [004 Dev Exp](#004-dev-exp)  Introduction to TILT ------Not completed
       - [TILT](#tilt)
    - [005 Dev Exp](#005-dev-exp)  Argo CD(continous development) ------Not completed
-   - 
+   - [006 Dev Exp](#006-dev-exp) Knative
 # Dev Exp
 ## 001 Dev Exp
 - Create a new spring boot application with web flux and actuator dependency.
@@ -44,10 +44,11 @@ a)runtime(OCI)
 - To deploy the application you need to create deployment, services and ingress controller, these thing take a lot of time to configure.
 - To mitigate ```deployment, service, and ingresscontroller``` configuration we can use TILT.
 
+
 ### TILT
 - Is a tool use for continous development on kubernates. whateverever command we were running manually, with the help of TILT we can automate that.
 - To install TILT use reference of official [doc](https://docs.tilt.dev/install)
 
-  
-
-  
+## 005 Dev Exp
+## 006 Dev Exp
+- 
