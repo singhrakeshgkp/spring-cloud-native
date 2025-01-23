@@ -22,7 +22,7 @@
 b)application(container)
 a)runtime(oci)
 ```
-- Here we have to write the docker file to cintainerize the application. Feedback loop is slow and cognitive load is little bit high as you need to read docker and write the docker file to cintainerize the application
+- Here we have to write the docker file to containerize the application. Feedback loop is slow and cognitive load is little bit high as you need to read docker and write the docker file to cintainerize the application
 - To get rid of the above steps we are going to use Cloud Native BuildPacks.  Cloud Native BuildPacks is an specification that define how to transform application source code into container images
  ```
                           BUILDPACKS
