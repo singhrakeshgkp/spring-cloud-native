@@ -17,7 +17,7 @@
 
 # Spring Cloud Native
 ## Goals
-  1. Rapic and Continous Feedback Loop
+  1. Rapid and Continous Feedback Loop
   2. Reduced Cognitive loads
   3. Clear and safe path to production
 ## Advantages of spring cloud native
